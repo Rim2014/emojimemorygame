@@ -63,4 +63,12 @@ class EmojiMemoryGame:
             widget.destroy()
 
         self.moves = 0
-        self.matches
+        self.matches = 0
+        self.open_cards = []
+
+        emojis = difficulty_levels[self.difficulty.get()]
+
+        self.cards =  emojis * 2
+        random.shuffle(self.cards)
+
+        self.info = tk.Label 
