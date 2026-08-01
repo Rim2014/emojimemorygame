@@ -72,3 +72,25 @@ class EmojiMemoryGame:
         random.shuffle(self.cards)
 
         self.info = tk.Label 
+
+        #----------------#
+
+
+
+            #--------------#
+
+
+
+
+        self.buttons[a]["text"]="?"
+        self.buttons[b]["text"]="?"
+        
+        self.message.config(text="❌ try again")
+        
+        self.open_cards=[]
+
+        self.update_info()
+
+        if self.matches==len(self.cards)//2:
+
+            self
