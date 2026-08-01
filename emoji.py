@@ -93,4 +93,20 @@ class EmojiMemoryGame:
 
         if self.matches==len(self.cards)//2:
 
-            self
+            self.message.config(
+                text=f"🏆 You win! moves: {self.moves}"
+            )
+
+
+    def update_info(self):
+
+        self.info.config(
+            
+            text=f"Difficulty: {self.difficulty.get()} | Moves: {self.moves}"
+        )
+
+
+root=tk.Tk
+game=EmojiMemoryGame(root)
+
+root.mainloop()
